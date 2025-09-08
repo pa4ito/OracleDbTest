@@ -42,6 +42,7 @@ public class Main {
                 " FROM HR.EMPLOYEES" +
                 " WHERE Employee_Id = :pattern " +
                 "   AND First_Name = :fname ";
+
         try (Connection connection = getConnection()) {
 //            try (Statement statement = connection.createStatement()) {
 //                try (ResultSet resultSet = statement.executeQuery(sql)) {
